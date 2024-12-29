@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
-const GRAPHQL_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+const GRAPHQL_URL = "https://graphql-pokemon2.vercel.app";
 
 const client = new ApolloClient({
   uri: GRAPHQL_URL,
