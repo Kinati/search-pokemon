@@ -96,7 +96,7 @@ export default function Pokemon() {
                 </thead>
                 <tbody>
                   {pokemon?.attacks?.fast.map((attack) => (
-                    <tr>
+                    <tr key={attack.name}>
                       <td>{attack.name}</td>
                       <td>{attack.type}</td>
                       <td>{attack.damage}</td>
@@ -119,7 +119,7 @@ export default function Pokemon() {
                 </thead>
                 <tbody>
                   {pokemon?.attacks?.special.map((attack) => (
-                    <tr>
+                    <tr key={attack.name}>
                       <td>{attack.name}</td>
                       <td>{attack.type}</td>
                       <td>{attack.damage}</td>
